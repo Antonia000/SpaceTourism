@@ -1,4 +1,4 @@
-# SpaceTourism
+# Space Tourism
 Responsive multi-page website developed with React.js
 
 Visit project page : https://antonia000.github.io/SpaceTourism/
