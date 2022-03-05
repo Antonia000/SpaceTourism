@@ -32,7 +32,6 @@ export default function Crew(){
     }
     return(
         <div className="crew">
-        
                 <Navbar />
                 <div className="grid">
                  

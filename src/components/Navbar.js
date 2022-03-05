@@ -6,11 +6,12 @@ import hamburgerMenu from '../assets/shared/icon-hamburger.svg';
 export default function Navbar() {
     const[hide,setHide]=React.useState(false)
     const[active,setActive]=React.useState({
-        '00Home': (window.location.pathname==="/home" || window.location.pathname==='/') ? 'active' : '',
-        '01Destination' : window.location.pathname==="/destination" ? 'active' : '',
-        '02Crew':window.location.pathname==="/crew" ? 'active' : '',
-        '03Technology':window.location.pathname==="/technology" ? 'active' : ''
+        '00Home': (window.location.pathname===`/SpaceTourism/home` || window.location.pathname===`/SpaceTourism/`) ? 'active' : '',
+        '01Destination' : window.location.pathname==="/SpaceTourism/destination" ? 'active' : '',
+        '02Crew':window.location.pathname==="/SpaceTourism/crew" ? 'active' : '',
+        '03Technology':window.location.pathname==="/SpaceTourism/technology" ? 'active' : ''
     })
+    console.log(window.location.pathname)
     function handleClick(e){
             setActive((prevState)=>{
                 if(e.target.textContent !== ""){
